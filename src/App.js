@@ -2,22 +2,25 @@ import './App.css';
 import Banner from './Components/Banner/Banner.js';
 import Navbar from './Components/Navbar/Navbar.js'
 import RowPost from './Components/RowPost/RowPost.js';
+import Constants from './Constants/Consatants.js';
+
 
 function App() {
   return (
     <div className="App">
       <Navbar/>
-      <Banner/>
+      <Banner url={Constants("Netflix Originals")}/>
       <div className="fade_bottom"></div>
       <div className="showLists">
-      <RowPost data="Netflix Originals" durl=""/>
-      <RowPost data="Trending"durl=""/>
-      <RowPost data="action" durl=""/>
-      <RowPost data="Comedy Movies" durl=""/>
-      <RowPost data="Horror Movies" durl=""/>
-      <RowPost data="Romance Movies" durl=""/>
-      <RowPost data="Action Movies" durl=""/>
-      <RowPost data="Documentaries" durl=""/>
+      <RowPost data="Trending" url={Constants("Trending")}/>
+      <RowPost data="Netflix Originals" url={Constants("Netflix Originals")}/>
+      <RowPost data="Comedy Movies" url={Constants("Comedy Movies")}/>
+      
+      <RowPost data="Action" url={Constants("Action")}/>
+      
+      <RowPost data="Horror Movies" url={Constants("Horror Movies")}/>
+      <RowPost data="Romance Movies" url={Constants("Romance Movies")}/>
+      <RowPost data="Documentaries" url={Constants("Documentaries")}/>
       </div>
     </div>
   );

@@ -5,7 +5,7 @@
 
 .posters {
     display: flex;
-    /* padding: 20px; */
+     padding: 10px 20px; 
     overflow-x: scroll;
     overflow-y: hidden;
 }
@@ -15,7 +15,25 @@
 }
 
 .poster{
-    max-height: 150px;
-    /* margin-right: 7px; */
+    /* max-height: 150px; */
+    margin-right: 2px; 
+    padding: 5px;
     border: #fff 1px;
+    cursor: pointer;
+    border-radius: 16px;
+    margin-bottom: 20px;
+}
+
+.poster:hover{
+    border: 3px solid antiquewhite;
+    padding: 0;
+}
+.portrait{
+    width:auto;
+    height: 350px;
+    object-fit: cover;
+}
+.large{
+    contain-intrinsic-height: 700%;
+    width: auto;
 }
