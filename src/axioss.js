@@ -4,6 +4,7 @@ import { baseUrl } from './Constants/Consatants';
 const instance = axios.create({
     baseURL: baseUrl,
    
-  });
+  }
+);
 
   export default instance

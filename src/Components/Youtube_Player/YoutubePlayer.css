@@ -1,0 +1,39 @@
+
+.youStyle {
+    /* top: 50px; */
+    /* height: -webkit-fill-available; */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin-bottom: 150px;
+  }
+  .videoHead {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    right: 15px;
+    width: -webkit-fill-available;
+    height: 55px;
+    background-color: #1a1919;
+    border-radius: 0 0 12px 12px;
+  }
+  .videoLogo{
+    width: 80px;
+    top: 15px;
+    left: 20px;
+    position: absolute;
+  }
+
+  .vidClose{
+    position: absolute;
+    top: 8px;
+    right: 20px;
+    padding: 20px;
+    background-color: #3f3f3f;
+    border-radius: 6px;
+    background-image: url(../../../public/Assets/Img/close-icon.png);
+    background-size: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  

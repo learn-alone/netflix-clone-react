@@ -6,16 +6,121 @@
     padding: 20px;
     display: flex;
     justify-content: space-between;
-    /* background-color: #111; */
+    /* background-color: #0a0a0a; */
+    background-color: #5555552e;
 }
+
+.navLeft{
+    display: flex;
+    justify-content: left;
+    width: 70%;
+}
+
+.NavRight{
+    display: flex;
+    justify-content: right;
+    width: 40%;
+    margin-right: 80px;
+}
+
 .navlogo {
-    position: fixed;
-    left: 20px;
-    width: 80px;
+    padding: 2px;
+}
+
+.searchbar {
+    margin-right: 50px;
+}
+.searchbar input{
+    padding: 7px;
+    width: 200px;
+    color: aliceblue;
+    background-color: #252525c4;
+    
+    vertical-align: middle;
+}
+
+.searchbar img {
+    margin-left: -25px;
+    margin-right: 25px;
+    width: 20px;
+    vertical-align: middle;
+    border-radius: 5px;
+}
+
+.searchResult{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 59px;
+    right: 160px;
+    width: 400px;
+    border: 2px solid #8b8680;
+    max-height: 500px;
+    background-color: #272525c7;
+    overflow-y: scroll;
+
+}
+.searchResult::-webkit-scrollbar{
+    /* display: none; */
+    background-color: #494747;
+    scrollbar-color: rgb(77, 77, 77);
+    width: 20px;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(39, 36, 36); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #111111; 
+  }
+
+
+
+.searchResult hr{
+    border: 2px solid #111;
+}
+
+.searchRow {
+    display: flex;
+    justify-content: left;
+    vertical-align: middle;
+    max-height: 70px;
+    padding: 10px;
+    color: #35303047;
+    background-color: #161818;
+}
+.searchRow:hover {
+    /* transform: scale(1.01); */
+    transform: skewX(10deg);
+    background-color: #414545;
+}
+
+.searchRow img{
+    max-height: 100px;
+    margin-right: 20px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.searchRow h3{
+    font-size: 14px;
+    color: aliceblue;
+    align-content: center;
+}
+.searchRow h4{
+    font-size: 12px;
+    color: #7b7e81;
+    align-content: baseline ;
 }
 
 .avatar {
-    position: fixed;
-    right: 20px;
-    width: 30px
+    
 }
